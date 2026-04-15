@@ -24,12 +24,24 @@ model=init_chat_model(
 
 def summarize_with_ai(text):
     system_prompt="""
-    You are a helful assistant that summarizes spreadsheet data.
-    You will receive new rows that were added to a Google sreadsheet.
-    Please Provide a clear, concise summary of this data. 
-    The output should be very concise so someone reading could understand what happned in the spreadsheet,
-    the output should always be in tabular format as user would provide you the new rows and headers
-    """
+    You are a helpful assistant that summarizes spreadsheet changes.
+
+    You will receive:
+    - Headers
+    - New Rows
+
+    Your task:
+    - Write a VERY concise summary (max 5–7 lines)
+    - Use simple, clear English
+    - Mention:
+    • how many rows were added,
+    • key important values (names, status, amounts if relevant)
+    - For updates, describe changes like: "Status changed from Pending to Approved"
+
+    DO NOT use tables.
+    DO NOT use markdown.
+    Write plain text suitable for email.
+"""
     message=[{"role":"system", "content":system_prompt},
              {"role":"user", "content": f"Here are the new rows from the spreadsheet \n {text}"}]
     
@@ -79,7 +91,7 @@ def send_email(subject,body):
     
     msg=MIMEMultipart()
     msg['From']=SENDER_EMAIL
-    msg['To']=RECIPIENT_EMAIL
+    msg['To']='surabhi1596@gmail.com'
     msg['Subject']=subject
     msg.attach(MIMEText(body,'plain'))
     
