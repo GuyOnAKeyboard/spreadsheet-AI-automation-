@@ -4,11 +4,11 @@ An intelligent automation tool that monitors a Google Spreadsheet for new rows, 
 
 ## Features
 
-✨ **Automated Monitoring** - Continuously checks your Google Spreadsheet for new entries
-🤖 **AI Summarization** - Uses local Llama AI (via Ollama) to generate intelligent summaries of new data
-📧 **Email Notifications** - Automatically sends summarized updates via email when new rows are detected
-⚡ **Efficient Tracking** - Keeps track of the last processed row to avoid duplicate processing
-🔐 **Secure Configuration** - Uses environment variables for sensitive data (API keys, credentials)
+**Automated Monitoring** - Continuously checks your Google Spreadsheet for new entries
+**AI Summarization** - Uses local Llama AI (via Ollama) to generate intelligent summaries of new data
+**Email Notifications** - Automatically sends summarized updates via email when new rows are detected
+**Efficient Tracking** - Keeps track of the last processed row to avoid duplicate processing
+**Secure Configuration** - Uses environment variables for sensitive data (API keys, credentials)
 
 ## Prerequisites
 
@@ -142,4 +142,4 @@ This project is open source and available for personal and commercial use.
 
 ## Support
 
-For issues or questions, check the [troubleshooting section](#troubleshooting) or review the code comments in `main.py`.
+For issues or questions, check the [Linkedin.](https://www.linkedin.com/in/guyonakeyboard/).
