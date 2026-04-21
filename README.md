@@ -1,6 +1,20 @@
-# Spreadsheet AI Automation
+# AI Spreadsheet Automation Agent (Google Sheets + Llama + Email)
 
-An intelligent automation tool that monitors a Google Spreadsheet for new rows, generates AI-powered summaries using a local Llama model, and sends email notifications.
+An AI-powered spreadsheet automation agent that monitors Google Sheets, processes new data using a local LLM (Llama via Ollama), and automatically triggers actions like email notifications.
+
+Turn your spreadsheet into an **intelligent workflow system** no manual checking, no repetitive summaries.
+
+## Why This Project?
+
+Manually checking spreadsheets, summarizing updates, and sending notifications is repetitive and time-consuming.
+
+This project transforms your spreadsheet into an **AI-driven pipeline**:
+
+- New data is detected automatically  
+- AI understands and summarizes it  
+- Actions (like emails) are triggered instantly  
+
+Think of it as a lightweight, local alternative to **Zapier + AI**, but fully customizable and private.
 
 ## Features
 
